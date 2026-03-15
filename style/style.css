@@ -1,11 +1,86 @@
+:root {
+    --nav-height: 72px;
+}
+
+.navbar {
+    background: rgba(168, 165, 165, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(46, 46, 46, 0.8);
+    transition: background 0.3s ease;
+    min-height: var(--nav-height);
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+}
+
+.nav-link {
+    color: rgba(157, 157, 157, 0.6) ;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem ;
+    border-radius: 4px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #fff ;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    padding-top: var(--nav-height);
+}
+
 
 #hero {
     background-color: #c1df68;
     width: 100vw;
-    min-height: 100px;
+    min-height: 240px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: 2rem 0;
     text-align: center;
 }
 
+
+#contact {
+    background-color: #dfc768;
+    width: 100vw;
+    min-height: 240px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#films {
+    background-color: #689cdf;
+    width: 100vw;
+    min-height: 240px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#experience {
+    background-color: #df6868;
+    width: 100vw;
+    min-height: 240px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
