@@ -3,7 +3,7 @@
 }
 
 .navbar {
-    background: rgba(168, 165, 165, 0.5);
+    background: rgba(218, 189, 139, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(46, 46, 46, 0.8);
@@ -60,6 +60,16 @@ body {
 
 #films {
     background-color: #689cdf;
+    width: 100vw;
+    min-height: 240px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#portfolio {
+    background-color: #68dfc8;
     width: 100vw;
     min-height: 240px;
     margin-left: calc(-50vw + 50%);
