@@ -3,22 +3,44 @@
 }
 
 .navbar {
-    background: rgba(218, 189, 139, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(46, 46, 46, 0.8);
-    transition: background 0.3s ease;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 1px solid transparent;
+    transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
     min-height: var(--nav-height);
 }
 
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(46, 46, 46, 0.8);
+}
+
+@media (max-width: 991.98px) {
+    .navbar.menu-open {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(46, 46, 46, 0.8);
+    }
+
+    .navbar-collapse.show {
+        background: transparent;
+    }
+}
+
 .navbar-brand {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.2rem;
     letter-spacing: 0.05em;
 }
-
+.navbar-brand:hover {
+    color: #bcbbbb;
+}
 .nav-link {
-    color: rgba(157, 157, 157, 0.6) ;
+    color: rgba(0, 0, 0, 0.6) ;
     font-size: 0.9rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -32,23 +54,28 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
+
+
+
 body {
-    padding-top: var(--nav-height);
+    padding-top: 0;
 }
 
 
 #hero {
+    font-family: coiny, sans-serif ;
     background-color: #c1df68;
     width: 100vw;
     min-height: 240px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    padding: 2rem 0;
+    padding: calc(var(--nav-height) + 2rem) 0 2rem;
     text-align: center;
 }
 
 #about {
     background-color: #ffffff;
+    font-family: noto serif, serif;
     width: 100vw;
     min-height: 240px;
     margin-left: calc(-50vw + 50%);
@@ -67,6 +94,28 @@ body {
     text-align: center;
 }
 
+.glass-btn {
+    background: rgba(255, 255, 255, 0.22);
+    color: #1f1f1f;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s ease;
+}
+
+.glass-btn:hover,
+.glass-btn:focus {
+    background: rgba(255, 255, 255, 0.32);
+    color: #111;
+    border-color: rgba(255, 255, 255, 0.65);
+    transform: translateY(-1px);
+}
+
+.glass-btn:active {
+    transform: translateY(0);
+}
+
 #films {
     background-color: #689cdf;
     width: 100vw;
@@ -79,6 +128,7 @@ body {
 
 #portfolio {
     background-color: #68dfc8;
+    font-family: noto serif, serif;
     width: 100vw;
     min-height: 240px;
     margin-left: calc(-50vw + 50%);
