@@ -164,8 +164,14 @@ body {
     min-height: 240px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    padding: 2rem 0;
     
+}
+
+.portfolio-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 #experience {
