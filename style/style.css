@@ -353,8 +353,10 @@ footer {
 }
 
 .contact-body {
-    background: linear-gradient(135deg, #ebe4c7 0%, #f6f1df 100%);
+    background: linear-gradient(135deg, #e8edf0 0%, #f4f1e8 54%, #e6edf0 100%);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-page {
@@ -362,6 +364,7 @@ footer {
     margin: 0 auto;
     padding: calc(var(--nav-height) + 2rem) 1rem 3rem;
     font-family: noto serif, serif;
+    flex: 1;
 }
 
 .contact-card {

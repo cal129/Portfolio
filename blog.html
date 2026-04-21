@@ -10,6 +10,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
         .blog-hero {
             width: 100vw;
             margin-left: calc(-50vw + 50%);
@@ -20,13 +26,14 @@
         }
 
         .blog-hero h1 {
-            font-family: coiny, sans-serif;
+            font-family: 'Fjalla One', sans-serif;
             margin-bottom: 0.75rem;
         }
 
         .blog-list {
             padding: 2.5rem 0 3rem;
             font-family: noto serif, serif;
+            flex: 1;
         }
 
         .blog-card {
@@ -40,6 +47,12 @@
         .blog-card .card-body {
             display: flex;
             flex-direction: column;
+            text-align: center;
+        }
+
+        .blog-card h2 {
+            padding-left: 0;
+            text-align: center;
         }
 
         .blog-meta {
@@ -70,7 +83,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav gap-2">
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about-me">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                         <ul class="dropdown-menu dropdown-menu-end">
@@ -93,28 +106,13 @@
     </section>
 
     <main class="container blog-list">
-        <div class="row g-4">
-            <div class="col-12 col-lg-6">
-                <article class="card blog-card">
-                    <div class="card-body p-4">
-                        <p class="blog-meta mb-2">03 April 2026 · Featured</p>
-                        <h2 class="h4">How I Build Creative Portfolio Websites</h2>
-                        <p>I combine clear structure, visual storytelling, and lightweight performance tweaks to make work stand out without slowing pages down.</p>
-                        <a class="blog-link" href="blog-first-post.html">Read post <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </article>
+        <article class="card blog-card">
+            <div class="card-body p-5 text-center">
+                <p class="blog-meta mb-2">Blog Update</p>
+                <h2 class="h4">Coming Soon</h2>
+                <p class="mb-0">I am currently preparing new posts. Check back soon for fresh content.</p>
             </div>
-            <div class="col-12 col-lg-6">
-                <article class="card blog-card">
-                    <div class="card-body p-4">
-                        <p class="blog-meta mb-2">Coming Soon</p>
-                        <h2 class="h4">Editing Workflow for Wedding Films</h2>
-                        <p>A practical walkthrough of how I sort footage, pick emotional beats, and shape a final wedding film edit.</p>
-                        <a class="blog-link" href="#" aria-disabled="true">Post in progress</a>
-                    </div>
-                </article>
-            </div>
-        </div>
+        </article>
     </main>
 
     <footer>
