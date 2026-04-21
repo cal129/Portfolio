@@ -422,6 +422,14 @@ footer {
     padding-left: 0;
 }
 
+.web-design-body .web-services-list .card-img-top {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
 .web-service-item h2 {
     font-size: 1.3rem;
     margin-bottom: 0.65rem;
