@@ -24,10 +24,18 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav gap-2">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="web-design.html">Web Design</a></li>
+                        <li><a class="dropdown-item" href="photography.html">Photography</a></li>
+                        <li><a class="dropdown-item" href="videography.html">Videography</a></li>
+                        <li><a class="dropdown-item" href="graphic-design.html">Graphic Design</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                 <li class="nav-item"><a class="nav-link" href="#Blog">Blog</a></li>
+                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
             </ul>
         </div>
     </nav>
@@ -42,26 +50,26 @@
     <section id="about">
         <h2>What I Do.</h2>
         <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between text-center" style="width:100vw;">
-            <div class="flex-fill mx-2 mb-4">
+            <a href="web-design.html" class="flex-fill mx-2 mb-4 text-decoration-none text-reset d-block">
                 <i class="bi bi-code-slash fs-1 text-primary"></i>
                 <h5 class="mt-2">Web Design</h5>
                 <p class="small">Building responsive websites.</p>
-            </div>
-            <div class="flex-fill mx-2 mb-4">
+            </a>
+            <a href="photography.html" class="flex-fill mx-2 mb-4 text-decoration-none text-reset d-block">
                 <i class="bi bi-camera fs-1 text-success"></i>
                 <h5 class="mt-2">Photography</h5>
                 <p class="small">Capturing beautiful moments.</p>
-            </div>
-            <div class="flex-fill mx-2 mb-4">
+            </a>
+            <a href="videography.html" class="flex-fill mx-2 mb-4 text-decoration-none text-reset d-block">
                 <i class="bi bi-film fs-1 text-warning"></i>
                 <h5 class="mt-2">Videography</h5>
                 <p class="small">Creating engaging video content.</p>
-            </div>
-            <div class="flex-fill mx-2 mb-4">
+            </a>
+            <a href="graphic-design.html" class="flex-fill mx-2 mb-4 text-decoration-none text-reset d-block">
                 <i class="bi bi-bezier fs-1 text-info"></i>
                 <h5 class="mt-2">Graphic Design</h5>
                 <p class="small">Creating visually appealing designs.</p>
-            </div>
+            </a>
          
         </div>
     </section>

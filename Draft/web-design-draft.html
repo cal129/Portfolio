@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Callum Randall</title>
+    <title>Web Design Services | Callum Randall</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body class="contact-body">
+<body class="web-design-body web-services-body">
     <header>
         <nav class="navbar navbar-expand-lg fixed-top px-4">
             <a class="navbar-brand fw-bold" href="index.html">CR_</a>
@@ -21,7 +21,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="web-design.html">Web Design</a></li>
+                            <li><a class="dropdown-item active" aria-current="page" href="web-design.html">Web Design</a></li>
                             <li><a class="dropdown-item" href="photography.html">Photography</a></li>
                             <li><a class="dropdown-item" href="videography.html">Videography</a></li>
                             <li><a class="dropdown-item" href="graphic-design.html">Graphic Design</a></li>
@@ -35,49 +35,45 @@
         </nav>
     </header>
 
-    <main class="contact-page">
-        <div class="contact-card p-4 p-md-5">
-            <div class="row g-4 align-items-start">
-                <div class="col-12 col-md-5">
-                    <h1 class="contact-title mb-3">Contact Me</h1>
-                    <p class="mb-4">Tell me what you are planning and I will get back to you as soon as possible.</p>
-                    <div class="contact-meta d-grid gap-2">
-                        <div><i class="bi bi-telephone me-2"></i><a href="tel:+440000000000">+44 0000 000000</a></div>
-                        <div><i class="bi bi-instagram me-2"></i><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-7">
-                    <form action="#" method="post" class="row g-3">
-                        <div class="col-12">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="service" class="form-label">Service</label>
-                            <select class="form-select" id="service" name="service" required>
-                                <option value="" selected disabled>Select a service</option>
-                                <option value="web-design">Web Design</option>
-                                <option value="photography">Photography</option>
-                                <option value="videography">Videography</option>
-                                <option value="graphic-design">Graphic Design</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="col-12 d-flex gap-2">
-                            <button type="submit" class="btn glass-btn">Send Message</button>
-                            <a href="index.html" class="btn btn-outline-dark">Back to Home</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <main class="web-services-shell">
+        <section class="web-services-intro">
+            <p class="web-services-kicker">Services</p>
+            <h1>Web Design</h1>
+            <p class="web-services-lead">Whether you need a full brochure website, a custom online store, or design support for an existing build, I create websites that look sharp, work smoothly, and are easy to update.</p>
+            <a href="contact.html" class="btn btn-dark mt-2">Start a project</a>
+        </section>
+
+        <section class="web-services-list" aria-label="Web design services">
+            <article class="web-service-item">
+                <h2>Design visuals</h2>
+                <p>If you already have a developer in place, I can provide the visual direction and UI designs for your site or app. I work to your team’s grid, breakpoints, and handoff needs.</p>
+                <p class="web-service-meta">Best for: Teams needing design-only support</p>
+            </article>
+
+            <article class="web-service-item">
+                <h2>Brochure website</h2>
+                <p>A focused multi-page website to introduce your business, explain what you do, and turn visitors into enquiries. Ideal for personal brands, service businesses, and startups.</p>
+                <p class="web-service-meta">Typical timeline: 3-4 weeks</p>
+            </article>
+
+            <article class="web-service-item">
+                <h2>Ecommerce website</h2>
+                <p>A custom online shop with clear product structure, simple checkout flow, and responsive pages across devices. Built to feel clean and easy to use from first click to purchase.</p>
+                <p class="web-service-meta">Typical timeline: 4-8 weeks</p>
+            </article>
+
+            <article class="web-service-item">
+                <h2>Web maintenance</h2>
+                <p>If your website already exists but needs updates, improvements, or fixes, I can support you on an hourly or retained basis to keep everything current and running smoothly.</p>
+                <p class="web-service-meta">Flexible support: One-off or ongoing</p>
+            </article>
+        </section>
+
+        <section class="web-services-outro">
+            <h2>Interested in working together?</h2>
+            <p>Send me a short summary of your project and I will come back with next steps, timeline, and what I recommend starting with.</p>
+            <a href="contact.html" class="btn btn-outline-dark">Contact Me</a>
+        </section>
     </main>
 
     <footer>
