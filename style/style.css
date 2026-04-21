@@ -407,6 +407,11 @@ footer {
     padding: 1.4rem;
 }
 
+.web-design-body .web-services-list .card {
+    background: rgba(180, 198, 206, 0.92);
+    border: 1px solid rgba(45, 45, 45, 0.12);
+}
+
 .web-service-item h2 {
     font-size: 1.3rem;
     margin-bottom: 0.65rem;
