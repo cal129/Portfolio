@@ -1004,6 +1004,77 @@ footer {
     min-height: 100vh;
 }
 
+.photography-body {
+    background: linear-gradient(135deg, #e8edf0 0%, #f4f1e8 54%, #e6edf0 100%);
+    min-height: 100vh;
+}
+
+.photo-masonry {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.photo-masonry figure {
+    margin: 0 0 1rem;
+    break-inside: avoid;
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(180, 198, 206, 0.24);
+    border: 1px solid rgba(24, 24, 24, 0.12);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.photo-masonry img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 991.98px) {
+    .photo-masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .photo-masonry {
+        column-count: 1;
+    }
+}
+
+.graphic-masonry {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.graphic-masonry figure {
+    margin: 0 0 1rem;
+    break-inside: avoid;
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(180, 198, 206, 0.3);
+    border: 1px solid rgba(24, 24, 24, 0.12);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.graphic-masonry img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 991.98px) {
+    .graphic-masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .graphic-masonry {
+        column-count: 1;
+    }
+}
+
 .graphic-hero {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
