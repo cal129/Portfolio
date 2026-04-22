@@ -916,6 +916,12 @@ footer {
 .videography-body {
     background: linear-gradient(135deg, #efe8dc 0%, #eef1f4 52%, #e3ecf1 100%);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.videography-body .web-services-shell {
+    flex: 1;
 }
 
 .video-hero {
