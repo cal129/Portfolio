@@ -1,5 +1,6 @@
 :root {
     --nav-height: 72px;
+    --site-gradient: linear-gradient(135deg, #efe8dc 0%, #eef1f4 52%, #e3ecf1 100%);
 }
 
 
@@ -38,10 +39,19 @@
     color: #000000;
     font-size: 1.2rem;
     letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
 }
 .navbar-brand:hover {
     color: #2a2a2a;
 }
+
+.brand-logo {
+    display: block;
+    width: auto;
+    height: 42px;
+}
+
 .nav-link {
     color: rgba(0, 0, 0, 0.6) ;
     font-size: 0.9rem;
@@ -96,11 +106,12 @@
 
 body {
     padding-top: 0;
+    background: var(--site-gradient);
 }
 
 
 #hero {
-    background-color: #DDDBD9;
+    background: var(--site-gradient);
     width: 100vw;
     min-height: 300px;
     margin-left: calc(-50vw + 50%);
@@ -386,7 +397,7 @@ footer {
 }
 
 .contact-body {
-    background: linear-gradient(135deg, #e8edf0 0%, #f4f1e8 54%, #e6edf0 100%);
+    background: var(--site-gradient);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -436,12 +447,12 @@ footer {
 }
 
 .web-design-body {
-    background: linear-gradient(135deg, #eef2e4 0%, #f7f1df 52%, #e7edf2 100%);
+    background: var(--site-gradient);
     min-height: 100vh;
 }
 
 .web-services-body {
-    background: #DDDBD9;
+    background: var(--site-gradient);
 }
 
 .web-services-shell {
@@ -759,7 +770,7 @@ footer {
 }
 
 .photography-body {
-    background: linear-gradient(135deg, #f5efe0 0%, #eef3f0 52%, #e6edf4 100%);
+    background: var(--site-gradient);
     min-height: 100vh;
 }
 
@@ -1091,12 +1102,12 @@ footer {
 }
 
 .graphic-design-body {
-    background: linear-gradient(135deg, #f2ede7 0%, #eef2f0 54%, #e6ece8 100%);
+    background: var(--site-gradient);
     min-height: 100vh;
 }
 
 .photography-body {
-    background: linear-gradient(135deg, #e8edf0 0%, #f4f1e8 54%, #e6edf0 100%);
+    background: var(--site-gradient);
     min-height: 100vh;
 }
 
