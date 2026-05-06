@@ -499,8 +499,9 @@ footer {
     padding: 1.4rem;
 }
 
+/* web design card color */
 .web-design-body .web-services-list .card {
-    background: rgba(180, 198, 206, 0.92);
+    background: rgba(201, 197, 197, 0.92);
     border: 1px solid rgba(45, 45, 45, 0.12);
     border-radius: 20px;
     overflow: hidden;
